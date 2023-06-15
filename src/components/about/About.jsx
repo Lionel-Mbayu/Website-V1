@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import AboutImg from '../../assets/about.jpg';
+import AboutImg from '../../assets/Profile2.jpg';
 import CV from '../../assets/Lionel-Cv.pdf';
 import Info from './info';
 
@@ -50,3 +50,5 @@ const About = () => {
 };
 
 export default About;
+
+/*  */
