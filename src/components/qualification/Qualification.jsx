@@ -25,10 +25,11 @@ const Qualification = () => {
 						<div className='qualification__data'>
 							<div>
 								<h3 className='qualification__title'>Web Design</h3>
-								<span className='qualification__subtitle'></span>Spain -
-								Institute
+								<span className='qualification__subtitle'>
+									Spain - Institute
+								</span>
 								<div className='qualification__calender'>
-									<i className='uil uil-calender-alt'></i> 2021 - Present
+									<i className='uil uil-calender-alt'></i> 202 - Present
 								</div>
 							</div>
 
@@ -48,8 +49,9 @@ const Qualification = () => {
 
 							<div>
 								<h3 className='qualification__title'>Art Director</h3>
-								<span className='qualification__subtitle'></span>Spain -
-								Institute
+								<span className='qualification__subtitle'>
+									Spain - Institute
+								</span>
 								<div className='qualification__calender'>
 									<i className='uil uil-calender-alt'></i> 2020 - 2021
 								</div>
@@ -59,8 +61,9 @@ const Qualification = () => {
 						<div className='qualification__data'>
 							<div>
 								<h3 className='qualification__title'>Web Developer</h3>
-								<span className='qualification__subtitle'></span>Spain -
-								Institute
+								<span className='qualification__subtitle'>
+									Spain - Institute
+								</span>
 								<div className='qualification__calender'>
 									<i className='uil uil-calender-alt'></i> 2018 - 2020
 								</div>
@@ -82,11 +85,67 @@ const Qualification = () => {
 
 							<div>
 								<h3 className='qualification__title'>UX Expert</h3>
-								<span className='qualification__subtitle'></span>Spain -
-								Institute
+								<span className='qualification__subtitle'>
+									Spain - Institute
+								</span>
 								<div className='qualification__calender'>
 									<i className='uil uil-calender-alt'></i> 2017 - 2018
 								</div>
+							</div>
+						</div>
+					</div>
+
+					<div className='qualification__content'>
+						<div className='qualification__data'>
+							<div>
+								<h3 className='qualification__title'>Product Designer</h3>
+								<span className='qualification__subtitle'>
+									Microsoft - Spain
+								</span>
+								<div className='qualification__calender'>
+									<i className='uil uil-calender-alt'></i> 202 - Present
+								</div>
+							</div>
+
+							<div>
+								<span className='qualification__rounder'></span>
+								<span className='qualification__line'></span>
+							</div>
+						</div>
+
+						<div className='qualification__data'>
+							<div></div>
+
+							<div>
+								<span className='qualification__rounder'></span>
+								<span className='qualification__line'></span>
+							</div>
+
+							<div>
+								<h3 className='qualification__title'>Art Director</h3>
+								<span className='qualification__subtitle'>
+									Spain - Institute
+								</span>
+								<div className='qualification__calender'>
+									<i className='uil uil-calender-alt'></i> 2020 - 2021
+								</div>
+							</div>
+						</div>
+
+						<div className='qualification__data'>
+							<div>
+								<h3 className='qualification__title'>Web Developer</h3>
+								<span className='qualification__subtitle'>
+									Spain - Institute
+								</span>
+								<div className='qualification__calender'>
+									<i className='uil uil-calender-alt'></i> 2018 - 2020
+								</div>
+							</div>
+
+							<div>
+								<span className='qualification__rounder'></span>
+								<span className='qualification__line'></span>
 							</div>
 						</div>
 					</div>
