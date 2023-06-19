@@ -26,6 +26,7 @@
 	--normal-font-size: 1rem;
 	--small-font-size: 0.875rem;
 	--smaller-font-size: 0.813rem;
+	--smallest-font-size: 0.375rem;
 	--tiny-font-size: 0.625rem;
 	/* Font weight */
 	--font-normal: 400;
@@ -71,6 +72,7 @@
 
 html {
 	scroll-behavior: smooth;
+	text-rendering: optimizeLegibility;
 }
 body,
 button,
