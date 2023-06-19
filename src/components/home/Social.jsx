@@ -3,28 +3,27 @@ import React from 'react';
 const Social = () => {
 	return (
 		<div className='home__social'>
-			<a
+			<SocialLink
 				href='https://www.linkedin.com/in/lionel-mbayu/'
-				className='home__social-icon'
-				target='_blank'
-				rel='noreferrer'>
-				<i class='uil uil-linkedin-alt'></i>
-			</a>
-			<a
-				href='https://github.com/Lionel-mbayu'
-				className='home__social-icon'
-				target='_blank'
-				rel='noreferrer'>
-				<i class='uil uil-github-alt'></i>
-			</a>
-			<a
-				href='https://www.instagram.com/'
-				className='home__social-icon'
-				target='_blank'
-				rel='noreferrer'>
-				<i class='uil uil-instagram'></i>
-			</a>
+				icon='uil-linkedin-alt'
+			/>
+
+			<SocialLink href='https://github.com/BruvLio' icon='uil-github-alt' />
+
+			<SocialLink href='https://www.instagram.com/' icon='uil-instagram' />
 		</div>
+	);
+};
+
+const SocialLink = ({ href, icon }) => {
+	return (
+		<a
+			href={href}
+			className='home__social-icon'
+			target='_blank'
+			rel='noreferrer'>
+			<i class={`uil ${icon}`}></i>
+		</a>
 	);
 };
 

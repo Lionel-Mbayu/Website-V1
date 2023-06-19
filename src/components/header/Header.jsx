@@ -1,115 +1,85 @@
 import React, { useState } from 'react';
+
+import { Menu, NavList, NavIconLink, NavLink } from './NavList';
+
 import './header.css';
 
 const Header = () => {
-	/* Change background Header */
-
 	window.addEventListener('scroll', function () {
 		const header = document.querySelector('.header');
 		// when the scroll is higher than 200 viewport height, add the scroll-header class to a tag with the header tag
 		if (this.scrollY >= 80) header.classList.add('show-header');
 		else header.classList.remove('show-scroll');
 	});
+	/* ============ Toggle Menu ============*/
 
-	/* Menu toggle  */
-	const [Toggle, showMenu] = useState(false);
-	const [activeNav, setActiveNav] = useState('#home');
+	const [toggle, showMenu] = useState(false);
+	const [active, setActive] = useState('#home');
 
 	return (
 		<header className='header'>
 			<nav className='nav container'>
-				<a href='index.html' className='nav__logo'>
+				<NavLink href='index.html' className='nav__logo'>
 					Lionel
-				</a>
-				<div className={Toggle ? 'nav__menu show-menu' : 'nav__menu'}>
-					<ul className='nav__list grid'>
-						<li className='nav__item'>
-							<a
-								href='#home'
-								onClick={() => {
-									setActiveNav('#home');
-								}}
-								className={
-									activeNav === '#home' ? 'nav__link active-link' : 'nav__link'
-								}>
-								<i className='uil uil-estate nav__icon'></i> Home
-							</a>
-						</li>
-						<li className='nav__item'>
-							<a
-								href='#about'
-								onClick={() => {
-									setActiveNav('#about');
-								}}
-								className={
-									activeNav === '#about' ? 'nav__link active-link' : 'nav__link'
-								}>
-								<i className='uil uil-user nav__icon'></i> About
-							</a>
-						</li>
-						<li className='nav__item'>
-							<a
-								href='#skills'
-								onClick={() => {
-									setActiveNav('#skills');
-								}}
-								className={
-									activeNav === '#skills'
-										? 'nav__link active-link'
-										: 'nav__link'
-								}>
-								<i className='uil uil-file-alt nav__icon'></i> Skills
-							</a>
-						</li>
-						<li className='nav__item'>
-							<a
-								href='#services'
-								onClick={() => {
-									setActiveNav('#services');
-								}}
-								className={
-									activeNav === '#services'
-										? 'nav__link active-link'
-										: 'nav__link'
-								}>
-								<i className='uil uil-briefcase-alt nav__icon'></i> Services
-							</a>
-						</li>
-						{/* <li className='nav__item'>
-							<a
-								href='#portfolio'
-								onClick={() => {
-									setActiveNav('#portfolio');
-								}}
-								className={
-									activeNav === '#portfolio'
-										? 'nav__link active-link'
-										: 'nav__link'
-								}>
-								<i className='uil uil-scenery nav__icon'></i> Portfolio
-							</a>
-						</li> */}
-						<li className='nav__item'>
-							<a
-								href='#contact'
-								onClick={() => {
-									setActiveNav('#contact');
-								}}
-								className={
-									activeNav === '#contact'
-										? 'nav__link active-link'
-										: 'nav__link'
-								}>
-								<i className='uil uil-message nav__icon'></i> Contact
-							</a>
-						</li>
-					</ul>
+				</NavLink>
+
+				<Menu toggle={toggle}>
+					<NavList>
+						<NavIconLink
+							href='#home'
+							icon='uil-estate'
+							active={active}
+							setActive={setActive}>
+							Home
+						</NavIconLink>
+
+						<NavIconLink
+							href='#about'
+							icon='uil-user'
+							active={active}
+							setActive={setActive}>
+							About
+						</NavIconLink>
+
+						<NavIconLink
+							href='#skills'
+							icon='uil-file-alt'
+							active={active}
+							setActive={setActive}>
+							Skills
+						</NavIconLink>
+						{/* 
+						<NavIconLink
+							href='#services'
+							icon='uil-briefcase-alt'
+							active={active}
+							setActive={setActive}>
+							Services
+						</NavIconLink> */}
+
+						{/* <NavIconLink
+							href='#portfolio'
+							icon='uil-scenery'
+							active={active}
+							setActive={setActive}>
+							Portfolio
+						</NavIconLink> */}
+
+						<NavIconLink
+							href='#contact'
+							icon='uil-message'
+							active={active}
+							setActive={setActive}>
+							Contact
+						</NavIconLink>
+					</NavList>
 
 					<i
 						class='uil uil-times nav__close'
-						onClick={() => showMenu(!Toggle)}></i>
-				</div>
-				<div className='nav__toggle' onClick={() => showMenu(!Toggle)}>
+						onClick={() => showMenu(!toggle)}
+					/>
+				</Menu>
+				<div className='nav__toggle' onClick={() => showMenu(!toggle)}>
 					<i class='uil uil-apps'></i>
 				</div>
 			</nav>
