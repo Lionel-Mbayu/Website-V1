@@ -8,7 +8,10 @@ const Social = () => {
 				icon='uil-linkedin-alt'
 			/>
 
-			<SocialLink href='https://github.com/BruvLio' icon='uil-github-alt' />
+			<SocialLink
+				href='https://github.com/Lionel-Mbayu'
+				icon='uil-github-alt'
+			/>
 
 			<SocialLink href='https://www.instagram.com/' icon='uil-instagram' />
 		</div>
