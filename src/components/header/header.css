@@ -81,9 +81,8 @@
 	}
 
 	.nav__list {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 2rem;
+		display: flex;
+		column-gap: 2rem;
 	}
 
 	.nav__icon {

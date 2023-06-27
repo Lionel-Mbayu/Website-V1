@@ -12,7 +12,7 @@ const About = () => {
 	return (
 		<section className='about section' id='about'>
 			<h2 className='section__title'>About Me</h2>
-			<span className='section__subtitle'>My introduction</span>
+			<span className='section__subtitle'>Introduction</span>
 			<Container className='about__container grid'>
 				<img src={AboutImg} alt='' className='about__img' />
 
@@ -20,12 +20,16 @@ const About = () => {
 					<Info />
 
 					<p className='about__description'>
-						Frontend developer, I create web pages with UI / UX user interface,
-						I have years of experience and many clients are happy with the
-						projects carried out.
+						In 2022 I decided to take a risk and do a career switch. I have been
+						in the healthcare space for the last 9 years, most recently as a
+						Consultant. I have always been curious about software development
+						and finally decided to make a change and do what felt rewarding. I
+						spend most of my time on my computer on one development project or
+						another these days. When not on my computer, I like to spend time
+						with family and friends.
 					</p>
 					<a download='' href={CV} className='button button--flex'>
-						<p>Download CV</p>
+						<p>Resume</p>
 						<FileIcon />
 					</a>
 				</div>

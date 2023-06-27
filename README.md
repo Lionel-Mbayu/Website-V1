@@ -2,11 +2,15 @@
 
 Under construction
 
+<!-- Testing -->
+<!-- NOTES -->
 <!-- Below React Temp -->
-<!-- Note
---Look into updating skills cmp with responsive logos
+<!--Look into updating skills cmp with responsive logos
 Animate title text to type itself out
+Add purple hue on hover
  -->
+
+ <!-- Redo styles with Tailwind - Fix Grid issue-->
 
 # Getting Started with Create React App
 

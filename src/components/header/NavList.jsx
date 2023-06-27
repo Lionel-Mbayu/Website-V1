@@ -6,7 +6,7 @@ export const Menu = ({ children, toggle }) => {
 	);
 };
 export const NavList = ({ children }) => {
-	return <ul className='nav__list grid'>{children}</ul>;
+	return <ul className='nav__list'>{children}</ul>;
 };
 
 export const NavIconLink = ({ children, href, icon, active, setActive }) => {

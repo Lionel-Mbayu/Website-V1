@@ -23,24 +23,24 @@ const Contact = () => {
 
 			<div className='contact__container container grid'>
 				<div className='contact__content'>
-					<h3 className='contact__title'>Talk to me</h3>
+					<h3 className='contact__title'>Say Hello</h3>
 
 					<div className='contact__info'>
 						<div className='contact__card'>
 							<i className='bx bx-mail-send contact__card-icon'></i>
 
 							<h3 className='contact__card-title'>Email</h3>
-							<span className='contact__card-data'>Lionel.Mbayu@gmail.com</span>
+							<span className='contact__card-data'></span>
 
 							<a
 								href='mailto:lionel.mbayu@gmail.com'
 								className='contact__button'>
-								Write me{' '}
+								Send Email{' '}
 								<i className='bx bx-right-arrow-alt contact__button-icon'></i>
 							</a>
 						</div>
 
-						<div className='contact__card'>
+						{/* <div className='contact__card'>
 							<i className='bx bxl-whatsapp contact__card-icon'></i>
 
 							<h3 className='contact__card-title'>Whatsapp</h3>
@@ -52,8 +52,8 @@ const Contact = () => {
 								Write me{' '}
 								<i className='bx bx-right-arrow-alt contact__button-icon'></i>
 							</a>
-						</div>
-
+						</div> */}
+						{/* 
 						<div className='contact__card'>
 							<i className='bx bxl-messenger contact__card-icon'></i>
 
@@ -64,12 +64,12 @@ const Contact = () => {
 								Write me{' '}
 								<i className='bx bx-right-arrow-alt contact__button-icon'></i>
 							</a>
-						</div>
+						</div> */}
 					</div>
 				</div>
 
 				<div className='contact__content'>
-					<h3 className='contact__title'>Write me your project</h3>
+					<h3 className='contact__title'>Send me a message!</h3>
 
 					<form ref={form} onSubmit={sendEmail} className='contact__form'>
 						<div className='contact__form-div'>
@@ -78,7 +78,7 @@ const Contact = () => {
 								type='text'
 								name='name'
 								className='contact__form-input'
-								placeholder='insert your name'
+								placeholder='Enter your name'
 							/>
 						</div>
 
@@ -88,7 +88,7 @@ const Contact = () => {
 								type='email'
 								name='email'
 								className='contact__form-input'
-								placeholder='insert your email'
+								placeholder='Enter your email'
 							/>
 						</div>
 
@@ -99,7 +99,7 @@ const Contact = () => {
 								cols='30'
 								rows='10'
 								className='contact__form-input'
-								placeholder='Write your project'></textarea>
+								placeholder='Hi Lionel,&#10;Lets connect...'></textarea>
 						</div>
 
 						<button className='button button--flex'>

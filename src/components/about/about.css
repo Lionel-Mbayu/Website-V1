@@ -69,6 +69,8 @@
 	}
 
 	.about__description {
+		text-align: justify;
+		text-indent: 45px;
 		padding: 0 5rem;
 		margin-bottom: 2rem;
 	}

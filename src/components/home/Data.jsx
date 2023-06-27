@@ -5,14 +5,18 @@ import { SendIcon, HandIcon } from '../../assets/icons';
 const Data = () => {
 	return (
 		<div className='home__data'>
-			<h1 className='home__title'>
-				Lionel Mbayu
+			{/* ADDED: container around name and HandIcon */}
+
+			<div className='name__container'>
+				<h1 className='home__title'>Lionel Mbayu</h1>
 				<HandIcon />
-			</h1>
+			</div>
+
 			<h3 className='home__subtitle'>Full-Stack Software Engineer</h3>
 			<p className='home__description'>
-				I'm a Software Developer based in Minneapolis, and I'm very passionate
-				about software and dedicated to furthering my knowledge base.
+				I am a Software Developer based in Minneapolis. I am passionate about
+				building innovative software solutions to create a better experience for
+				the user.
 			</p>
 
 			<a href='#contact' className='button button--flex'>

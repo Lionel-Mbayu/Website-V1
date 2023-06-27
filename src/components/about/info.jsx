@@ -5,16 +5,16 @@ const Info = () => {
 		<div className='about__info grid'>
 			<AboutContainer icon='bx-award'>
 				<Title>Experience</Title>
-				<Subtitle>8 Years Working</Subtitle>
+				<Subtitle>1y as a Dev</Subtitle>
 			</AboutContainer>
 
 			<AboutContainer icon='bx-briefcase-alt'>
 				<Title>Completed</Title>
-				<Subtitle>48 + Projects</Subtitle>
+				<Subtitle>12+ Dev Projects</Subtitle>
 			</AboutContainer>
 
 			<AboutContainer icon='bx-support'>
-				<Title>Support</Title>
+				<Title>Availability</Title>
 				<Subtitle>Online 24/7</Subtitle>
 			</AboutContainer>
 		</div>

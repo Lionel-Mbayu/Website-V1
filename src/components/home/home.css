@@ -24,6 +24,13 @@
 	color: var(--title-color-dark);
 }
 
+/* ADDED: this for container around name and hand svg */
+.name__container {
+	display: flex;
+	align-items: center;
+}
+
+
 /* --big-font-size for home component adjustments 7/31*/
 .home__title {
 	font-size: var(--big-font-size);
@@ -149,6 +156,18 @@
 	.home__scroll {
 		margin-left: 7.5rem;
 	}
+
+	/* ADDED: styles for home__title and home__subtitle */
+
+	.home__title {
+		font-size: 2.45rem;
+	}
+
+	.home__subtitle {
+		font-size: 1rem;
+
+	}
+
 }
 
 /* for medium devices  */
@@ -176,11 +195,32 @@
 	.home__scroll {
 		display: none;
 	}
-}
-/* @media screen and (max-width: 576px) {
-	.home__container {
+
+	/* ADDED: styles for home__title and home__subtitle */
+
+	.home__subtitle {
+		font-size: 1rem;
 	}
-} */
+
+	.home__subtitle::before {
+		top: 1rem;
+	}
+}
+
+/* ADDED: To fix font size on smaller screens */
+@media screen and (max-width: 576px) {
+	.home__title {
+		font-size: 2.5rem;
+	}
+	.home__subtitle {
+		font-size: 1rem;
+	}
+
+	.home__subtitle::before {
+		top: 1rem;
+	}
+}
+
 /* For small devices */
 @media screen and (max-width: 350px) {
 	.home__img {
@@ -190,5 +230,19 @@
 	.home__hand {
 		width: 22px;
 		height: 22px;
+	}
+
+	/* ADDED: styles for home__title and home__subtitle */
+
+	.home__title {
+		font-size: 2rem;
+	}
+
+	.home__subtitle {
+		font-size: .99rem;
+	}
+
+	.home__subtitle::before {
+		top: .5rem;
 	}
 }
