@@ -1,17 +1,6 @@
 # Personal site
 
-Under construction
-
-<!-- Testing -->
-<!-- NOTES -->
-<!-- Below React Temp -->
-<!--Look into updating skills cmp with responsive logos
-Animate title text to type itself out
-Add purple hue on hover
- -->
-
- <!-- Redo styles with Tailwind - Fix Grid issue-->
-<!-- Testing -->
+Version 1
 
 # Getting Started with Create React App
 
