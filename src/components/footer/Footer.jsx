@@ -52,7 +52,6 @@ const Footer = () => {
 				</div>
 
 				<span className='footer__copy'>Curated by Lionel Mbayu</span>
-				<div className='footer__copy2'>&#169; Crypticalcoder</div>
 			</div>
 		</footer>
 	);
