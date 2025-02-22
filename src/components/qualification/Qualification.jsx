@@ -1,16 +1,8 @@
-import React, { useState } from 'react';
+import "./qualification.css";
 
-import {
-	TabsButtons,
-	Tab,
-	TabBody,
-	TabContent,
-	TabData,
-	TabDetail,
-} from './QualificationTabs';
-import { QualificationContainer, LineDot } from './QualificationContainer';
-
-import './qualification.css';
+import { LineDot, QualificationContainer } from "./QualificationContainer";
+import React, { useState } from "react";
+import { Tab, TabBody, TabContent, TabData, TabDetail, TabsButtons } from "./QualificationTabs";
 
 const Qualification = () => {
 	const [activeTab, setActiveTab] = useState(2);
@@ -24,19 +16,11 @@ const Qualification = () => {
 
 			<QualificationContainer>
 				<TabsButtons>
-					<Tab
-						icon='uil-graduation-cap'
-						active={activeTab}
-						setActiveTab={setActiveTab}
-						tabNumber={1}>
+					<Tab icon='uil-graduation-cap' active={activeTab} setActiveTab={setActiveTab} tabNumber={1}>
 						Education
 					</Tab>
 
-					<Tab
-						icon='uil-briefcase-alt'
-						active={activeTab}
-						setActiveTab={setActiveTab}
-						tabNumber={2}>
+					<Tab icon='uil-briefcase-alt' active={activeTab} setActiveTab={setActiveTab} tabNumber={2}>
 						Experience
 					</Tab>
 				</TabsButtons>
@@ -44,11 +28,7 @@ const Qualification = () => {
 				<TabBody>
 					<TabContent activeTab={activeTab} contentNumber={1}>
 						<TabData>
-							<TabDetail
-								title='Bloom Institute of Technology'
-								company='US'
-								duration='2022 - 2023'
-							/>
+							<TabDetail title='Bloom Institute of Technology' company='US' duration='2022 - 2023' />
 
 							<LineDot />
 						</TabData>
@@ -86,40 +66,29 @@ const Qualification = () => {
 
 					<TabContent activeTab={activeTab} contentNumber={2}>
 						<TabData>
-							<TabDetail
-								title='Full Stack Developer - Student'
-								company='BloomTech - US'
-								duration='2022 - 2023'
-							/>
+							<div className='alignment' />
+							<LineDot />
+							<TabDetail title='Software Engineer' company='Longevity Holdings - US' duration='2023 - Present' />
+						</TabData>
+						<TabData>
+							<TabDetail title='Full Stack Developer - Student' company='BloomTech - US' duration='2022 - 2023' />
 							<LineDot />
 						</TabData>
 						<TabData>
 							<div className='alignment' />
 							<LineDot />
-							<TabDetail
-								title='Consultant'
-								company='AON - US'
-								duration='2020 - 2021'
-							/>
+							<TabDetail title='Consultant' company='AON - US' duration='2020 - 2021' />
 						</TabData>
 
 						<TabData>
-							<TabDetail
-								title='Sr Account Analyst'
-								company='Prime Therapeutics - US'
-								duration='2019 - 2020'
-							/>
+							<TabDetail title='Sr Account Analyst' company='Prime Therapeutics - US' duration='2019 - 2020' />
 							<LineDot />
 						</TabData>
 
 						<TabData>
 							<div className='alignment' />
 							<LineDot />
-							<TabDetail
-								title='Sr Pricing Analyst'
-								company='Prime Therapeutics - US'
-								duration='2017 - 2018'
-							/>
+							<TabDetail title='Sr Pricing Analyst' company='Prime Therapeutics - US' duration='2017 - 2018' />
 						</TabData>
 					</TabContent>
 				</TabBody>
