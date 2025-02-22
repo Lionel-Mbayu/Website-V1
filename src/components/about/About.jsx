@@ -1,7 +1,7 @@
 import "./about.css";
 
 import AboutImg from "../../assets/images/DSC08372 2.jpg";
-import CV from "../../assets/cv/Lionel Mbayu - Resume.pdf";
+import CV from "../../assets/cv/Lionel Mbayu - Updated Resume.pdf";
 import { Container } from "../shared";
 import { FileIcon } from "../../assets/icons";
 import Info from "./info";
