@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Backend = () => {
 	return (
@@ -10,15 +10,15 @@ const Backend = () => {
 					<div className='skills__data'>
 						<i class='bx bx-badge-check'></i>
 						<div>
-							<h3 className='skills__name'>KnexJS</h3>
-							<span className='skills__level'>Intermediate</span>
+							<h3 className='skills__name'>DataGrip</h3>
+							<span className='skills__level'>Advanced</span>
 						</div>
 					</div>
 					<div className='skills__data'>
 						<i class='bx bx-badge-check'></i>
 						<div>
 							<h3 className='skills__name'>NodeJS</h3>
-							<span className='skills__level'>Intermediate</span>
+							<span className='skills__level'>Advanced</span>
 						</div>
 					</div>
 					<div className='skills__data'>

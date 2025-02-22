@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Frontend = () => {
 	return (
@@ -20,7 +20,7 @@ const Frontend = () => {
 
 						<div>
 							<h3 className='skills__name'>Tailwind</h3>
-							<span className='skills__level'>Basic</span>
+							<span className='skills__level'>Advanced</span>
 						</div>
 					</div>
 					<div className='skills__data'>
@@ -28,7 +28,7 @@ const Frontend = () => {
 
 						<div>
 							<h3 className='skills__name'>TypeScript</h3>
-							<span className='skills__level'>Intermediate</span>
+							<span className='skills__level'>Advanced</span>
 						</div>
 					</div>
 				</div>
@@ -39,7 +39,7 @@ const Frontend = () => {
 
 						<div>
 							<h3 className='skills__name'>Redux</h3>
-							<span className='skills__level'>Intermediate</span>
+							<span className='skills__level'>Advanced</span>
 						</div>
 					</div>
 					<div className='skills__data'>
@@ -65,5 +65,3 @@ const Frontend = () => {
 };
 
 export default Frontend;
-
-// 1.19.52
