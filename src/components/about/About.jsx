@@ -1,12 +1,11 @@
-import React from 'react';
+import "./about.css";
 
-import AboutImg from '../../assets/images/DSC08372 2.jpg';
-import CV from '../../assets/cv/Lionel Mbayu - Resume.pdf';
-import Info from './info';
-import { FileIcon } from '../../assets/icons';
-import { Container } from '../shared';
-
-import './about.css';
+import AboutImg from "../../assets/images/DSC08372 2.jpg";
+import CV from "../../assets/cv/Lionel Mbayu - Resume.pdf";
+import { Container } from "../shared";
+import { FileIcon } from "../../assets/icons";
+import Info from "./info";
+import React from "react";
 
 const About = () => {
 	return (
@@ -20,13 +19,10 @@ const About = () => {
 					<Info />
 
 					<p className='about__description'>
-						In 2022 I decided to take a risk and do a career switch. I have been
-						in the healthcare space for the last 9 years, most recently as a
-						Consultant. I have always been curious about software development
-						and finally decided to make a change and do what felt rewarding. I
-						spend most of my time on my computer on one development project or
-						another these days. When not on my computer, I like to spend time
-						with family and friends.
+						In 2022 I decided to take a risk and do a career switch. I have been in the healthcare space for the last 9 years,
+						most recently as a Consultant. I have always been curious about software development and finally decided to make a
+						change and do what felt rewarding. I spend most of my time on my computer on one development project or another
+						these days. When not on my computer, I like to spend time with family and friends.
 					</p>
 					<a download='' href={CV} className='button button--flex'>
 						<p>Resume</p>
