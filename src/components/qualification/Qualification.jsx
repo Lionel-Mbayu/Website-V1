@@ -68,7 +68,7 @@ const Qualification = () => {
 						<TabData>
 							<div className='alignment' />
 							<LineDot />
-							<TabDetail title='Software Engineer' company='Longevity Holdings - US' duration='2023 - Present' />
+							<TabDetail title='Software Engineer' company='Longevity Holdings - US' duration='2024 - Present' />
 						</TabData>
 						<TabData>
 							<TabDetail title='Full Stack Developer - Student' company='BloomTech - US' duration='2022 - 2023' />
